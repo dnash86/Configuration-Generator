@@ -19,7 +19,7 @@ Block MINPAR   # SUSY breaking input parameters
      3     1.50000000E+01   # tan(beta)
      4     1.00000000E+00   # sign(mu)
      5     1.00000000E+00   # N_5 messenger index
-     6     9.40000000E+01   # c_grav gravitino mass factor
+     6     2.29046997E+02   # c_grav gravitino mass factor
     51     1.00000000E+00   # N5_1  U(1)_Y messenger index
     52     1.00000000E+00   # N5_2 SU(2)_L messenger index
     53     1.00000000E+00   # N5_3 SU(3)_C messenger index
@@ -52,10 +52,10 @@ Block MASS   # Scalar and gaugino mass spectrum
    1000024     6.02127502E+02   #  w1ss           
    1000025    -8.39722534E+02   #  z3ss           
    1000035     8.53071106E+02   #  z4ss           
-   1000037     8.53456116E+02   #  w2ss  
+   1000037     8.53456116E+02   #  w2ss          
 
-   1000039     0.219E-05        # M(gravitino)
-         
+   1000039     0.533E-05        # M(gravitino)
+ 
    2000001     2.20429468E+03   #  dnr            
    2000002     2.21506787E+03   #  upr            
    2000003     2.20429468E+03   #  str            
@@ -211,7 +211,7 @@ DECAY   1000021  4.19414937E-02   # GLSS  decays
       7.69913953E-04    3      1000035         4        -4             # GLSS   -->  Z4SS   CH     CB          
       4.56331344E-03    3      1000035         5        -5             # GLSS   -->  Z4SS   BT     BB          
       7.22234622E-02    3      1000035         6        -6             # GLSS   -->  Z4SS   TP     TB          
-      8.26519686E-11    2      1000039        21                       # GLSS   -->  GVSS   GL                 
+      1.39206563E-11    2      1000039        21                       # GLSS   -->  GVSS   GL                 
 #         PDG         Width
 DECAY   1000002  5.34554672E+01   # UPL   decays
 #          BR          NDA       ID1       ID2       ID3       ID4
@@ -336,7 +336,7 @@ DECAY   1000011  2.15325594E+00   # EL-   decays
       4.52780783E-01    2     -1000024        12                       # EL-    -->  W1SS-  NUE                
       1.25346858E-07    3      1000015        11       -15             # EL-    -->  TAU1-  E-     TAU+        
       1.45259335E-07    3     -1000015        11        15             # EL-    -->  TAU1+  E-     TAU-        
-      3.16631351E-14    2           11   1000039                       # EL-    -->  E-     GVSS               
+      5.33286226E-15    2           11   1000039                       # EL-    -->  E-     GVSS               
 #         PDG         Width
 DECAY   1000013  2.15325570E+00   # MUL-  decays
 #          BR          NDA       ID1       ID2       ID3       ID4
@@ -345,12 +345,12 @@ DECAY   1000013  2.15325570E+00   # MUL-  decays
       4.52780843E-01    2     -1000024        14                       # MUL-   -->  W1SS-  NUM                
       1.25346872E-07    3      1000015        13       -15             # MUL-   -->  TAU1-  MU-    TAU+        
       1.45259349E-07    3     -1000015        13        15             # MUL-   -->  TAU1+  MU-    TAU-        
-      3.16631385E-14    2           13   1000039                       # MUL-   -->  MU-    GVSS               
+      5.33286268E-15    2           13   1000039                       # MUL-   -->  MU-    GVSS               
 #         PDG         Width
 DECAY   1000015  2.05491513E-01   # TAU1- decays
 #          BR          NDA       ID1       ID2       ID3       ID4
       1.00000000E+00    2      1000022        15                       # TAU1-  -->  Z1SS   TAU-               
-      9.55845680E-15    2           15   1000039                       # TAU1-  -->  TAU-   GVSS               
+      1.60988289E-15    2           15   1000039                       # TAU1-  -->  TAU-   GVSS               
 #         PDG         Width
 DECAY   1000012  2.06883311E+00   # NUEL  decays
 #          BR          NDA       ID1       ID2       ID3       ID4
@@ -360,7 +360,7 @@ DECAY   1000012  2.06883311E+00   # NUEL  decays
       2.23051899E-07    3      1000015        12       -15             # NUEL   -->  TAU1-  NUE    TAU+        
       1.88149059E-07    3     -1000015        12        15             # NUEL   -->  TAU1+  NUE    TAU-        
       1.07431140E-06    3     -1000015        11        16             # NUEL   -->  TAU1+  E-     NUT         
-      3.11435516E-14    2           12   1000039                       # NUEL   -->  NUE    GVSS               
+      5.24535148E-15    2           12   1000039                       # NUEL   -->  NUE    GVSS               
 #         PDG         Width
 DECAY   1000014  2.06883287E+00   # NUML  decays
 #          BR          NDA       ID1       ID2       ID3       ID4
@@ -370,7 +370,7 @@ DECAY   1000014  2.06883287E+00   # NUML  decays
       2.23051927E-07    3      1000015        14       -15             # NUML   -->  TAU1-  NUM    TAU+        
       1.88149087E-07    3     -1000015        14        15             # NUML   -->  TAU1+  NUM    TAU-        
       1.07568121E-06    3     -1000015        13        16             # NUML   -->  TAU1+  MU-    NUT         
-      3.11435549E-14    2           14   1000039                       # NUML   -->  NUM    GVSS               
+      5.24535190E-15    2           14   1000039                       # NUML   -->  NUM    GVSS               
 #         PDG         Width
 DECAY   1000016  2.24111295E+00   # NUTL  decays
 #          BR          NDA       ID1       ID2       ID3       ID4
@@ -380,17 +380,17 @@ DECAY   1000016  2.24111295E+00   # NUTL  decays
       1.04169399E-01    2           24   1000015                       # NUTL   -->  W+     TAU1-              
       5.57178112E-07    3     -1000015        16        15             # NUTL   -->  TAU1+  NUT    TAU-        
       1.63060918E-07    3      1000015        16       -15             # NUTL   -->  TAU1-  NUT    TAU+        
-      2.79483993E-14    2           16   1000039                       # NUTL   -->  NUT    GVSS               
+      4.70720773E-15    2           16   1000039                       # NUTL   -->  NUT    GVSS               
 #         PDG         Width
 DECAY   2000011  2.01533422E-01   # ER-   decays
 #          BR          NDA       ID1       ID2       ID3       ID4
       1.00000000E+00    2      1000022        11                       # ER-    -->  Z1SS   E-                 
-      9.64298391E-15    2           11   1000039                       # ER-    -->  E-     GVSS               
+      1.62411908E-15    2           11   1000039                       # ER-    -->  E-     GVSS               
 #         PDG         Width
 DECAY   2000013  2.01533332E-01   # MUR-  decays
 #          BR          NDA       ID1       ID2       ID3       ID4
       1.00000000E+00    2      1000022        13                       # MUR-   -->  Z1SS   MU-                
-      9.64298984E-15    2           13   1000039                       # MUR-   -->  MU-    GVSS               
+      1.62412024E-15    2           13   1000039                       # MUR-   -->  MU-    GVSS               
 #         PDG         Width
 DECAY   2000015  2.36146355E+00   # TAU2- decays
 #          BR          NDA       ID1       ID2       ID3       ID4
@@ -400,12 +400,12 @@ DECAY   2000015  2.36146355E+00   # TAU2- decays
       5.21728769E-02    2           23   1000015                       # TAU2-  -->  Z0     TAU1-              
       6.22694083E-02    2           25   1000015                       # TAU2-  -->  HL0    TAU1-              
 #         PDG         Width
-DECAY   1000022  1.973267E-16   # Z1SS  decays
+DECAY   1000022  3.288778E-17  # Z1SS  decays
 #          BR          NDA       ID1       ID2       ID3       ID4
       8.04338515E-01    2      1000039        22                       # Z1SS   -->  GVSS   GM                 
-      1.77732036E-02    3      1000039        11       -11             # Z1SS   -->  GVSS   E-     E+          
+      1.77732017E-02    3      1000039        11       -11             # Z1SS   -->  GVSS   E-     E+          
       1.77753732E-01    2      1000039        23                       # Z1SS   -->  GVSS   Z0                 
-      1.34546572E-04    2      1000039        25                       # Z1SS   -->  GVSS   HL0                
+      1.34546586E-04    2      1000039        25                       # Z1SS   -->  GVSS   HL0                
 #         PDG         Width
 DECAY   1000023  3.89645882E-02   # Z2SS  decays
 #          BR          NDA       ID1       ID2       ID3       ID4
@@ -429,10 +429,10 @@ DECAY   1000023  3.89645882E-02   # Z2SS  decays
       7.43978983E-03    2     -2000013        13                       # Z2SS   -->  MUR+   MU-                
       1.41002849E-01    2      1000015       -15                       # Z2SS   -->  TAU1-  TAU+               
       1.41002849E-01    2     -1000015        15                       # Z2SS   -->  TAU1+  TAU-               
-      1.15879216E-13    2      1000039        22                       # Z2SS   -->  GVSS   GM                 
-      2.68550674E-15    3      1000039        11       -11             # Z2SS   -->  GVSS   E-     E+          
-      3.18192440E-13    2      1000039        23                       # Z2SS   -->  GVSS   Z0                 
-      3.42964614E-15    2      1000039        25                       # Z2SS   -->  GVSS   HL0                
+      1.95169554E-14    2      1000039        22                       # Z2SS   -->  GVSS   GM                 
+      4.52306435E-16    3      1000039        11       -11             # Z2SS   -->  GVSS   E-     E+          
+      5.35915510E-14    2      1000039        23                       # Z2SS   -->  GVSS   Z0                 
+      5.77638089E-16    2      1000039        25                       # Z2SS   -->  GVSS   HL0                
 #         PDG         Width
 DECAY   1000025  3.65064669E+00   # Z3SS  decays
 #          BR          NDA       ID1       ID2       ID3       ID4
@@ -474,10 +474,10 @@ DECAY   1000025  3.65064669E+00   # Z3SS  decays
       2.88602514E-05    2     -1000014        14                       # Z3SS   -->  ANUML  NUM                
       3.23054373E-05    2      1000016       -16                       # Z3SS   -->  NUTL   ANUT               
       3.23054373E-05    2     -1000016        16                       # Z3SS   -->  ANUTL  NUT                
-      7.46690614E-19    2      1000039        22                       # Z3SS   -->  GVSS   GM                 
-      1.77172523E-20    3      1000039        11       -11             # Z3SS   -->  GVSS   E-     E+          
-      5.73954692E-15    2      1000039        23                       # Z3SS   -->  GVSS   Z0                 
-      7.20415921E-15    2      1000039        25                       # Z3SS   -->  GVSS   HL0                
+      1.25761348E-19    2      1000039        22                       # Z3SS   -->  GVSS   GM                 
+      2.98402801E-21    3      1000039        11       -11             # Z3SS   -->  GVSS   E-     E+          
+      9.66683021E-16    2      1000039        23                       # Z3SS   -->  GVSS   Z0                 
+      1.21336030E-15    2      1000039        25                       # Z3SS   -->  GVSS   HL0                
 #         PDG         Width
 DECAY   1000035  4.19021463E+00   # Z4SS  decays
 #          BR          NDA       ID1       ID2       ID3       ID4
@@ -531,10 +531,10 @@ DECAY   1000035  4.19021463E+00   # Z4SS  decays
       1.07327546E-03    2     -1000014        14                       # Z4SS   -->  ANUML  NUM                
       1.17977674E-03    2      1000016       -16                       # Z4SS   -->  NUTL   ANUT               
       1.17977674E-03    2     -1000016        16                       # Z4SS   -->  ANUTL  NUT                
-      9.98044231E-17    2      1000039        22                       # Z4SS   -->  GVSS   GM                 
-      2.37073913E-18    3      1000039        11       -11             # Z4SS   -->  GVSS   E-     E+          
-      8.03419051E-15    2      1000039        23                       # Z4SS   -->  GVSS   Z0                 
-      4.97103266E-15    2      1000039        25                       # Z4SS   -->  GVSS   HL0                
+      1.68095574E-17    2      1000039        22                       # Z4SS   -->  GVSS   GM                 
+      3.99291688E-19    3      1000039        11       -11             # Z4SS   -->  GVSS   E-     E+          
+      1.35315832E-15    2      1000039        23                       # Z4SS   -->  GVSS   Z0                 
+      8.37246170E-16    2      1000039        25                       # Z4SS   -->  GVSS   HL0                
 #         PDG         Width
 DECAY   1000024  3.49657200E-02   # W1SS+ decays
 #          BR          NDA       ID1       ID2       ID3       ID4
